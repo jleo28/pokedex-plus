@@ -1,0 +1,12 @@
+import { createClient } from '@supabase/supabase-js';
+import type { Database } from './types';
+
+// Server-side client — uses service role key, bypasses RLS.
+// Only import this in Server Components, Server Actions, and Route Handlers.
+export function createServerClient() {
+  return createClient<Database>(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+    { auth: { persistSession: false } }
+  );
+}
