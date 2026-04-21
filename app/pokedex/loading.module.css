@@ -1,0 +1,49 @@
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--surface-2) 25%,
+    var(--surface) 50%,
+    var(--surface-2) 75%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 1.4s infinite steps(8, end);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer {
+    animation: none;
+    background: var(--surface-2);
+  }
+}
+
+.titleSkeleton {
+  composes: shimmer;
+  height: 2rem;
+  width: 160px;
+  margin-bottom: var(--space-2);
+}
+
+.countSkeleton {
+  composes: shimmer;
+  height: 1rem;
+  width: 80px;
+  margin-bottom: var(--space-6);
+}
+
+.filterSkeleton {
+  composes: shimmer;
+  height: 48px;
+  margin-bottom: var(--space-5);
+  border: 2px solid var(--border-soft);
+}
+
+.card {
+  composes: shimmer;
+  height: 140px;
+  border: 2px solid var(--border-soft);
+}
