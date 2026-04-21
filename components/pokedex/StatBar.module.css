@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.label {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-xs);
+  color: var(--ink-soft);
+  width: 3.5rem;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.track {
+  flex: 1;
+  display: flex;
+  gap: 2px;
+  height: 12px;
+}
+
+.segment {
+  flex: 1;
+  background-color: var(--surface-2);
+  border: 1px solid var(--border-soft);
+}
+
+.value {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-xs);
+  color: var(--ink-soft);
+  width: 2rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* Filled state — set via inline style on the track */
+.segment.filled {
+  background-color: var(--bar-color, var(--accent));
+  border-color: var(--bar-color, var(--accent));
+}
+
+/* Animation: fill from 0 to filled count over 400ms in discrete steps */
+@keyframes fillBar {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.track[data-animate='true'] .segment.filled {
+  animation: fillBar 400ms steps(10, end) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track[data-animate='true'] .segment.filled {
+    animation: none;
+  }
+}
