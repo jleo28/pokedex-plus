@@ -52,10 +52,11 @@ export async function getPokemonByIds(ids: number[]): Promise<Pokemon[]> {
   return (data ?? []) as Pokemon[];
 }
 
-export async function getEvolutionChain(pokemonId: number): Promise<Evolution[]> {
+export async function getEvolutionChain(
+  pokemonId: number,
+): Promise<{ evolutions: Evolution[]; chain: number[] }> {
   const supabase = createServerClient();
 
-  // Walk up to find the root of the chain
   async function findRoot(id: number): Promise<number> {
     const { data } = await supabase
       .from('evolutions')
@@ -66,7 +67,6 @@ export async function getEvolutionChain(pokemonId: number): Promise<Evolution[]>
     return id;
   }
 
-  // Collect all evolutions in the chain
   async function collectChain(rootId: number): Promise<Evolution[]> {
     const { data } = await supabase
       .from('evolutions')
@@ -79,5 +79,25 @@ export async function getEvolutionChain(pokemonId: number): Promise<Evolution[]>
   }
 
   const rootId = await findRoot(pokemonId);
-  return collectChain(rootId);
+  const evolutions = await collectChain(rootId);
+
+  // Build ordered chain of unique IDs (BFS from root)
+  const chain: number[] = [rootId];
+  const visited = new Set([rootId]);
+  let frontier = [rootId];
+  while (frontier.length > 0) {
+    const next: number[] = [];
+    for (const id of frontier) {
+      for (const evo of evolutions.filter((e) => e.from_id === id)) {
+        if (!visited.has(evo.to_id)) {
+          visited.add(evo.to_id);
+          chain.push(evo.to_id);
+          next.push(evo.to_id);
+        }
+      }
+    }
+    frontier = next;
+  }
+
+  return { evolutions, chain };
 }

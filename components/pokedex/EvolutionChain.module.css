@@ -1,0 +1,75 @@
+.section {
+  margin-bottom: var(--space-6);
+}
+
+.heading {
+  font-family: var(--font-pixel), monospace;
+  font-size: var(--text-xs);
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+}
+
+.chain {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.arrowIcon {
+  font-family: var(--font-pixel), monospace;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.trigger {
+  font-family: var(--font-mono), monospace;
+  font-size: calc(var(--text-xs) * 0.75);
+  color: var(--ink-muted);
+  white-space: nowrap;
+}
+
+.mon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-2);
+  border: 2px solid transparent;
+  text-decoration: none;
+  transition: border-color var(--motion-instant) var(--ease-step);
+}
+
+.mon:hover {
+  border-color: var(--border-soft);
+}
+
+.mon.current {
+  border-color: var(--border);
+}
+
+.sprite {
+  image-rendering: pixelated;
+}
+
+.name {
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.75);
+  color: var(--ink);
+  text-transform: capitalize;
+}
