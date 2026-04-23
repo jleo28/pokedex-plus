@@ -20,7 +20,7 @@ export default async function HomePage() {
             Pokédex<span>++</span>
           </h1>
           <p className={styles.tagline}>
-            386 Pokémon. Two sklearn models. One rebuild of my ITP-216 final project —
+            386 Pokémon. Two sklearn models. One rebuild of my ITP-216 final project,
             this time with Next.js, Supabase, and actual ML predictions.
           </p>
           <div className={styles.cta}>
@@ -49,7 +49,7 @@ export default async function HomePage() {
         <section className={styles.about}>
           <p className={styles.aboutText}>
             This is a rebuild of my 2023 ITP-216 final project. It&apos;s a Pokédex.
-            It also has two sklearn models doing real predictions — one regresses Base Stat Total
+            It also has two sklearn models doing real predictions: one regresses Base Stat Total
             from physical traits, one classifies legendary status from the six base stats.
             Built with Next.js 14, Supabase, and Vercel&apos;s Python runtime for inference.
           </p>

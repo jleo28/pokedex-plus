@@ -49,7 +49,7 @@ export function ConfusionMatrix({ tp, fp, fn, tn, precision, recall, f1 }: Confu
       </div>
 
       <p className={styles.note}>
-        Only 15 of 386 Pokémon are legendary — a 4% class rate.
+        Only 15 of 386 Pokémon are legendary, a 4% class rate.
         With that imbalance, recall matters more than accuracy:
         a model that predicted "never legendary" would score 96% accuracy but 0% recall.
       </p>

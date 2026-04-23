@@ -18,7 +18,7 @@ export default function LabPage() {
       <div className={styles.header}>
         <h1 className={styles.title}>ML Lab</h1>
         <p className={styles.intro}>
-          I trained two scikit-learn models on the Gen 1–3 Pokédex — 386 Pokémon,
+          I trained two scikit-learn models on the Gen 1–3 Pokédex, 386 Pokémon,
           six base stats each. One model predicts Base Stat Total from physical and
           categorical traits. The other classifies legendary status from the six stats alone.
           Neither is impressive by production ML standards, but both do something non-trivial
@@ -30,7 +30,7 @@ export default function LabPage() {
       <div className={styles.models}>
         <ModelCard
           title="BST Regressor"
-          description="Predicts a Pokémon's Base Stat Total from height, weight, generation, and type — no stats used. R² ≈ 0.59 on cross-validation."
+          description="Predicts a Pokémon's Base Stat Total from height, weight, generation, and type (no stats used). R² ≈ 0.59 on cross-validation."
           metric={`R² ${bst.cv_r2_mean.toFixed(2)} ± ${bst.cv_r2_std.toFixed(2)}`}
         >
           <section>
@@ -49,7 +49,7 @@ export default function LabPage() {
 
         <ModelCard
           title="Legendary Classifier"
-          description="Classifies legendary status from the six base stats alone, with no categorical features. F1 ≈ 0.83 on cross-validation — good, given only 15 legendaries in the training set."
+          description="Classifies legendary status from the six base stats alone, with no categorical features. F1 ≈ 0.83 on cross-validation, given only 15 legendaries in the training set."
           metric={`F1 ${clf.cv_f1_mean.toFixed(2)} ± ${clf.cv_f1_std.toFixed(2)}`}
         >
           <section>

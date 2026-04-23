@@ -111,7 +111,7 @@ export function PredictForm() {
             </div>
             <span className={styles.probValue}>
               {(result.predicted_legendary_prob * 100).toFixed(1)}%
-              {result.predicted_legendary ? ' — Legendary' : ' — Not legendary'}
+              {result.predicted_legendary ? ', Legendary' : ', Not legendary'}
             </span>
           </div>
         </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { SpriteImage } from '@/components/pokedex/SpriteImage';
 import { TypeBadge } from '@/components/pokedex/TypeBadge';
 import type { Pokemon } from '@/lib/pokemon/types';
@@ -51,7 +52,7 @@ export function PokemonPicker({ allPokemon, onPick, onClose }: PokemonPickerProp
     return () => document.removeEventListener('keydown', onKey);
   }, [onClose]);
 
-  return (
+  const modal = (
     <div
       className={styles.backdrop}
       onClick={onClose}
@@ -103,4 +104,6 @@ export function PokemonPicker({ allPokemon, onPick, onClose }: PokemonPickerProp
       </div>
     </div>
   );
+
+  return createPortal(modal, document.body);
 }
