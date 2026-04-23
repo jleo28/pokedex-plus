@@ -1,0 +1,19 @@
+@keyframes wipeIn {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.page {
+  animation: wipeIn 350ms var(--ease-snap, cubic-bezier(0.16, 1, 0.3, 1)) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page {
+    animation: fadeIn 200ms ease both;
+  }
+}
