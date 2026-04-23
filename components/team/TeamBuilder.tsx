@@ -2,10 +2,15 @@
 
 import { useState } from 'react';
 import { TeamSlot } from './TeamSlot';
+import { PokemonPicker } from './PokemonPicker';
 import type { Pokemon } from '@/lib/pokemon/types';
 import styles from './TeamBuilder.module.css';
 
-export function TeamBuilder() {
+interface TeamBuilderProps {
+  allPokemon: Pokemon[];
+}
+
+export function TeamBuilder({ allPokemon }: TeamBuilderProps) {
   const [team, setTeam] = useState<(Pokemon | null)[]>(Array(6).fill(null));
   const [activeSlot, setActiveSlot] = useState<number | null>(null);
 
@@ -21,10 +26,6 @@ export function TeamBuilder() {
     });
   }
 
-  function handleClose() {
-    setActiveSlot(null);
-  }
-
   function handlePick(pokemon: Pokemon) {
     if (activeSlot === null) return;
     setTeam((prev) => {
@@ -32,6 +33,10 @@ export function TeamBuilder() {
       next[activeSlot] = pokemon;
       return next;
     });
+    setActiveSlot(null);
+  }
+
+  function handleClose() {
     setActiveSlot(null);
   }
 
@@ -50,26 +55,12 @@ export function TeamBuilder() {
       </div>
 
       {activeSlot !== null && (
-        <PokemonPickerModal onPick={handlePick} onClose={handleClose} />
+        <PokemonPicker
+          allPokemon={allPokemon}
+          onPick={handlePick}
+          onClose={handleClose}
+        />
       )}
     </>
-  );
-}
-
-// Lazy import to avoid circular deps — picker lives in same file for Task 19 stub
-function PokemonPickerModal({
-  onPick,
-  onClose,
-}: {
-  onPick: (p: Pokemon) => void;
-  onClose: () => void;
-}) {
-  return (
-    <div className={styles.modalBackdrop} onClick={onClose} role="dialog" aria-modal>
-      <div className={styles.modalBox} onClick={(e) => e.stopPropagation()}>
-        <p className={styles.modalNote}>Picker coming in Task 20…</p>
-        <button className={styles.modalClose} onClick={onClose}>Close</button>
-      </div>
-    </div>
   );
 }
