@@ -55,16 +55,18 @@ export function CompareView({ allPokemon, initialA, initialB }: CompareViewProps
     if (!a || !b) return null;
     const aMatchup = getDefensiveMatchup(a.type_primary, a.type_secondary);
     const bMatchup = getDefensiveMatchup(b.type_primary, b.type_secondary);
-    const aWeakToB =
+    // bMatchup = types super-effective against B, so if A's type is in there, A has the advantage
+    const aHasAdvantage =
       bMatchup.double.includes(a.type_primary) ||
       bMatchup.quad.includes(a.type_primary) ||
       (a.type_secondary && (bMatchup.double.includes(a.type_secondary) || bMatchup.quad.includes(a.type_secondary)));
-    const bWeakToA =
+    // aMatchup = types super-effective against A, so if B's type is in there, B has the advantage
+    const bHasAdvantage =
       aMatchup.double.includes(b.type_primary) ||
       aMatchup.quad.includes(b.type_primary) ||
       (b.type_secondary && (aMatchup.double.includes(b.type_secondary) || aMatchup.quad.includes(b.type_secondary)));
-    if (aWeakToB && !bWeakToA) return 'b';
-    if (bWeakToA && !aWeakToB) return 'a';
+    if (aHasAdvantage && !bHasAdvantage) return 'a';
+    if (bHasAdvantage && !aHasAdvantage) return 'b';
     return 'tie';
   })();
 
