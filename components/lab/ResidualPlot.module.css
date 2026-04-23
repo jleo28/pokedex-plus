@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.tip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-mono), monospace;
+  font-size: calc(var(--text-xs) * 0.85);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.caption {
+  font-family: var(--font-mono), monospace;
+  font-size: calc(var(--text-xs) * 0.8);
+  color: var(--ink-muted);
+  line-height: 1.5;
+}
