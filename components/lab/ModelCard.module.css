@@ -1,0 +1,45 @@
+.card {
+  border: 2px solid var(--border);
+  background: var(--surface);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: var(--font-pixel), monospace;
+  font-size: var(--text-sm);
+  color: var(--ink);
+  letter-spacing: 0.04em;
+}
+
+.metric {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-xs);
+  color: var(--ink-muted);
+  border: 1px solid var(--border-soft);
+  padding: 2px var(--space-2);
+}
+
+.description {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  line-height: 1.6;
+  max-width: 60ch;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
