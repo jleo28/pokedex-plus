@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState } from 'react';
+import { useSoundEnabled } from '@/components/layout/SoundProvider';
 import styles from './CryButton.module.css';
 
 interface CryButtonProps {
@@ -11,9 +12,10 @@ interface CryButtonProps {
 export function CryButton({ cryUrl, name }: CryButtonProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState(false);
+  const { enabled: soundEnabled } = useSoundEnabled();
 
   function play() {
-    if (playing) return;
+    if (playing || !soundEnabled) return;
     const audio = new Audio(cryUrl);
     audioRef.current = audio;
     setPlaying(true);
