@@ -23,7 +23,7 @@ const CHART: Record<PokemonType, Partial<Record<PokemonType, number>>> = {
   fairy:    { dragon: 0, fighting: 0.5, bug: 0.5, dark: 0.5, poison: 2, steel: 2 },
 };
 
-const ALL_TYPES: PokemonType[] = [
+export const ALL_TYPES: PokemonType[] = [
   'normal','fire','water','electric','grass','ice','fighting','poison',
   'ground','flying','psychic','bug','rock','ghost','dragon','dark','steel','fairy',
 ];
@@ -34,6 +34,11 @@ export interface TypeMatchup {
   half: PokemonType[];
   double: PokemonType[];
   quad: PokemonType[];
+}
+
+// How effective is [attackingType] against [defendingType]
+export function getOffensiveMultiplier(atk: PokemonType, def: PokemonType): number {
+  return CHART[def][atk] ?? 1;
 }
 
 export function getDefensiveMatchup(t1: PokemonType, t2?: PokemonType | null): TypeMatchup {
