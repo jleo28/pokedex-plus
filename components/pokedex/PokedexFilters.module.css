@@ -1,0 +1,72 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  align-items: flex-end;
+}
+
+.searchWrapper {
+  flex: 1;
+  min-width: 200px;
+  max-width: 320px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.groupLabel {
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.85);
+  color: var(--ink-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+.chip {
+  padding: var(--space-1) var(--space-2);
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.85);
+  letter-spacing: 0.05em;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  transition: background var(--motion-instant) var(--ease-step),
+              color var(--motion-instant) var(--ease-step);
+  white-space: nowrap;
+}
+
+.chip:hover {
+  background: var(--surface-2);
+}
+
+.chip.active {
+  background: var(--border);
+  color: var(--bg);
+}
+
+.chip:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .searchWrapper {
+    max-width: 100%;
+  }
+}

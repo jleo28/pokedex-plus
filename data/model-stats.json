@@ -1,0 +1,2223 @@
+{
+  "bst_regressor": {
+    "cv_r2_mean": 0.5866,
+    "cv_r2_std": 0.0629,
+    "feature_importances": [
+      {
+        "feature": "height_dm",
+        "importance": 0.5379
+      },
+      {
+        "feature": "weight_hg",
+        "importance": 0.1942
+      },
+      {
+        "feature": "is_legendary",
+        "importance": 0.1233
+      },
+      {
+        "feature": "generation",
+        "importance": 0.0183
+      },
+      {
+        "feature": "type_primary_bug",
+        "importance": 0.0167
+      },
+      {
+        "feature": "type_primary_normal",
+        "importance": 0.0101
+      },
+      {
+        "feature": "type_primary_fighting",
+        "importance": 0.0096
+      },
+      {
+        "feature": "type_secondary_flying",
+        "importance": 0.0087
+      },
+      {
+        "feature": "type_secondary_none",
+        "importance": 0.0071
+      },
+      {
+        "feature": "type_primary_grass",
+        "importance": 0.0069
+      }
+    ],
+    "residuals": [
+      {
+        "actual": 318,
+        "predicted": 330.4,
+        "name": "Bulbasaur"
+      },
+      {
+        "actual": 405,
+        "predicted": 403.6,
+        "name": "Ivysaur"
+      },
+      {
+        "actual": 525,
+        "predicted": 508.9,
+        "name": "Venusaur"
+      },
+      {
+        "actual": 309,
+        "predicted": 304.7,
+        "name": "Charmander"
+      },
+      {
+        "actual": 405,
+        "predicted": 437.2,
+        "name": "Charmeleon"
+      },
+      {
+        "actual": 534,
+        "predicted": 511.3,
+        "name": "Charizard"
+      },
+      {
+        "actual": 314,
+        "predicted": 303.2,
+        "name": "Squirtle"
+      },
+      {
+        "actual": 405,
+        "predicted": 430.8,
+        "name": "Wartortle"
+      },
+      {
+        "actual": 530,
+        "predicted": 503.4,
+        "name": "Blastoise"
+      },
+      {
+        "actual": 195,
+        "predicted": 211.2,
+        "name": "Caterpie"
+      },
+      {
+        "actual": 205,
+        "predicted": 227.0,
+        "name": "Metapod"
+      },
+      {
+        "actual": 395,
+        "predicted": 399.8,
+        "name": "Butterfree"
+      },
+      {
+        "actual": 195,
+        "predicted": 221.5,
+        "name": "Weedle"
+      },
+      {
+        "actual": 205,
+        "predicted": 227.1,
+        "name": "Kakuna"
+      },
+      {
+        "actual": 395,
+        "predicted": 382.1,
+        "name": "Beedrill"
+      },
+      {
+        "actual": 251,
+        "predicted": 264.2,
+        "name": "Pidgey"
+      },
+      {
+        "actual": 349,
+        "predicted": 389.9,
+        "name": "Pidgeotto"
+      },
+      {
+        "actual": 479,
+        "predicted": 446.7,
+        "name": "Pidgeot"
+      },
+      {
+        "actual": 253,
+        "predicted": 264.0,
+        "name": "Rattata"
+      },
+      {
+        "actual": 413,
+        "predicted": 376.6,
+        "name": "Raticate"
+      },
+      {
+        "actual": 262,
+        "predicted": 271.2,
+        "name": "Spearow"
+      },
+      {
+        "actual": 442,
+        "predicted": 402.9,
+        "name": "Fearow"
+      },
+      {
+        "actual": 288,
+        "predicted": 321.2,
+        "name": "Ekans"
+      },
+      {
+        "actual": 448,
+        "predicted": 469.8,
+        "name": "Arbok"
+      },
+      {
+        "actual": 320,
+        "predicted": 312.8,
+        "name": "Pikachu"
+      },
+      {
+        "actual": 485,
+        "predicted": 462.8,
+        "name": "Raichu"
+      },
+      {
+        "actual": 300,
+        "predicted": 308.0,
+        "name": "Sandshrew"
+      },
+      {
+        "actual": 450,
+        "predicted": 440.8,
+        "name": "Sandslash"
+      },
+      {
+        "actual": 275,
+        "predicted": 299.0,
+        "name": "Nidoran\u00e2\u2122\u20ac"
+      },
+      {
+        "actual": 365,
+        "predicted": 346.2,
+        "name": "Nidorina"
+      },
+      {
+        "actual": 505,
+        "predicted": 488.9,
+        "name": "Nidoqueen"
+      },
+      {
+        "actual": 273,
+        "predicted": 301.1,
+        "name": "Nidoran\u00e2\u2122\u201a"
+      },
+      {
+        "actual": 365,
+        "predicted": 369.4,
+        "name": "Nidorino"
+      },
+      {
+        "actual": 505,
+        "predicted": 489.4,
+        "name": "Nidoking"
+      },
+      {
+        "actual": 323,
+        "predicted": 303.1,
+        "name": "Clefairy"
+      },
+      {
+        "actual": 483,
+        "predicted": 474.1,
+        "name": "Clefable"
+      },
+      {
+        "actual": 299,
+        "predicted": 300.9,
+        "name": "Vulpix"
+      },
+      {
+        "actual": 505,
+        "predicted": 461.7,
+        "name": "Ninetales"
+      },
+      {
+        "actual": 270,
+        "predicted": 283.6,
+        "name": "Jigglypuff"
+      },
+      {
+        "actual": 435,
+        "predicted": 408.8,
+        "name": "Wigglytuff"
+      },
+      {
+        "actual": 245,
+        "predicted": 293.0,
+        "name": "Zubat"
+      },
+      {
+        "actual": 455,
+        "predicted": 484.0,
+        "name": "Golbat"
+      },
+      {
+        "actual": 320,
+        "predicted": 327.3,
+        "name": "Oddish"
+      },
+      {
+        "actual": 395,
+        "predicted": 368.0,
+        "name": "Gloom"
+      },
+      {
+        "actual": 490,
+        "predicted": 451.5,
+        "name": "Vileplume"
+      },
+      {
+        "actual": 285,
+        "predicted": 274.5,
+        "name": "Paras"
+      },
+      {
+        "actual": 405,
+        "predicted": 404.6,
+        "name": "Parasect"
+      },
+      {
+        "actual": 305,
+        "predicted": 350.9,
+        "name": "Venonat"
+      },
+      {
+        "actual": 450,
+        "predicted": 443.3,
+        "name": "Venomoth"
+      },
+      {
+        "actual": 265,
+        "predicted": 292.2,
+        "name": "Diglett"
+      },
+      {
+        "actual": 425,
+        "predicted": 379.4,
+        "name": "Dugtrio"
+      },
+      {
+        "actual": 290,
+        "predicted": 308.1,
+        "name": "Meowth"
+      },
+      {
+        "actual": 440,
+        "predicted": 427.0,
+        "name": "Persian"
+      },
+      {
+        "actual": 320,
+        "predicted": 334.4,
+        "name": "Psyduck"
+      },
+      {
+        "actual": 500,
+        "predicted": 498.8,
+        "name": "Golduck"
+      },
+      {
+        "actual": 305,
+        "predicted": 323.3,
+        "name": "Mankey"
+      },
+      {
+        "actual": 455,
+        "predicted": 407.2,
+        "name": "Primeape"
+      },
+      {
+        "actual": 350,
+        "predicted": 343.5,
+        "name": "Growlithe"
+      },
+      {
+        "actual": 555,
+        "predicted": 538.4,
+        "name": "Arcanine"
+      },
+      {
+        "actual": 300,
+        "predicted": 307.6,
+        "name": "Poliwag"
+      },
+      {
+        "actual": 385,
+        "predicted": 408.5,
+        "name": "Poliwhirl"
+      },
+      {
+        "actual": 510,
+        "predicted": 483.3,
+        "name": "Poliwrath"
+      },
+      {
+        "actual": 310,
+        "predicted": 345.9,
+        "name": "Abra"
+      },
+      {
+        "actual": 400,
+        "predicted": 436.6,
+        "name": "Kadabra"
+      },
+      {
+        "actual": 500,
+        "predicted": 494.8,
+        "name": "Alakazam"
+      },
+      {
+        "actual": 305,
+        "predicted": 313.4,
+        "name": "Machop"
+      },
+      {
+        "actual": 405,
+        "predicted": 440.7,
+        "name": "Machoke"
+      },
+      {
+        "actual": 505,
+        "predicted": 489.5,
+        "name": "Machamp"
+      },
+      {
+        "actual": 300,
+        "predicted": 325.3,
+        "name": "Bellsprout"
+      },
+      {
+        "actual": 390,
+        "predicted": 373.6,
+        "name": "Weepinbell"
+      },
+      {
+        "actual": 490,
+        "predicted": 467.2,
+        "name": "Victreebel"
+      },
+      {
+        "actual": 335,
+        "predicted": 353.4,
+        "name": "Tentacool"
+      },
+      {
+        "actual": 515,
+        "predicted": 497.9,
+        "name": "Tentacruel"
+      },
+      {
+        "actual": 300,
+        "predicted": 320.0,
+        "name": "Geodude"
+      },
+      {
+        "actual": 390,
+        "predicted": 396.2,
+        "name": "Graveler"
+      },
+      {
+        "actual": 495,
+        "predicted": 491.7,
+        "name": "Golem"
+      },
+      {
+        "actual": 410,
+        "predicted": 433.7,
+        "name": "Ponyta"
+      },
+      {
+        "actual": 500,
+        "predicted": 507.5,
+        "name": "Rapidash"
+      },
+      {
+        "actual": 315,
+        "predicted": 389.8,
+        "name": "Slowpoke"
+      },
+      {
+        "actual": 490,
+        "predicted": 499.0,
+        "name": "Slowbro"
+      },
+      {
+        "actual": 325,
+        "predicted": 312.0,
+        "name": "Magnemite"
+      },
+      {
+        "actual": 465,
+        "predicted": 444.0,
+        "name": "Magneton"
+      },
+      {
+        "actual": 377,
+        "predicted": 355.4,
+        "name": "Farfetch\u00e2\u20ac\u2122d"
+      },
+      {
+        "actual": 310,
+        "predicted": 359.0,
+        "name": "Doduo"
+      },
+      {
+        "actual": 470,
+        "predicted": 498.6,
+        "name": "Dodrio"
+      },
+      {
+        "actual": 325,
+        "predicted": 389.3,
+        "name": "Seel"
+      },
+      {
+        "actual": 475,
+        "predicted": 499.2,
+        "name": "Dewgong"
+      },
+      {
+        "actual": 325,
+        "predicted": 392.4,
+        "name": "Grimer"
+      },
+      {
+        "actual": 500,
+        "predicted": 461.8,
+        "name": "Muk"
+      },
+      {
+        "actual": 305,
+        "predicted": 295.4,
+        "name": "Shellder"
+      },
+      {
+        "actual": 525,
+        "predicted": 536.7,
+        "name": "Cloyster"
+      },
+      {
+        "actual": 310,
+        "predicted": 349.9,
+        "name": "Gastly"
+      },
+      {
+        "actual": 405,
+        "predicted": 378.8,
+        "name": "Haunter"
+      },
+      {
+        "actual": 500,
+        "predicted": 485.8,
+        "name": "Gengar"
+      },
+      {
+        "actual": 385,
+        "predicted": 437.3,
+        "name": "Onix"
+      },
+      {
+        "actual": 328,
+        "predicted": 389.1,
+        "name": "Drowzee"
+      },
+      {
+        "actual": 483,
+        "predicted": 495.4,
+        "name": "Hypno"
+      },
+      {
+        "actual": 325,
+        "predicted": 302.8,
+        "name": "Krabby"
+      },
+      {
+        "actual": 475,
+        "predicted": 476.2,
+        "name": "Kingler"
+      },
+      {
+        "actual": 330,
+        "predicted": 311.9,
+        "name": "Voltorb"
+      },
+      {
+        "actual": 490,
+        "predicted": 468.7,
+        "name": "Electrode"
+      },
+      {
+        "actual": 325,
+        "predicted": 314.3,
+        "name": "Exeggcute"
+      },
+      {
+        "actual": 530,
+        "predicted": 508.7,
+        "name": "Exeggutor"
+      },
+      {
+        "actual": 320,
+        "predicted": 304.9,
+        "name": "Cubone"
+      },
+      {
+        "actual": 425,
+        "predicted": 424.6,
+        "name": "Marowak"
+      },
+      {
+        "actual": 455,
+        "predicted": 460.5,
+        "name": "Hitmonlee"
+      },
+      {
+        "actual": 455,
+        "predicted": 458.9,
+        "name": "Hitmonchan"
+      },
+      {
+        "actual": 385,
+        "predicted": 402.9,
+        "name": "Lickitung"
+      },
+      {
+        "actual": 340,
+        "predicted": 352.1,
+        "name": "Koffing"
+      },
+      {
+        "actual": 490,
+        "predicted": 431.3,
+        "name": "Weezing"
+      },
+      {
+        "actual": 345,
+        "predicted": 390.1,
+        "name": "Rhyhorn"
+      },
+      {
+        "actual": 485,
+        "predicted": 502.1,
+        "name": "Rhydon"
+      },
+      {
+        "actual": 450,
+        "predicted": 433.0,
+        "name": "Chansey"
+      },
+      {
+        "actual": 435,
+        "predicted": 427.4,
+        "name": "Tangela"
+      },
+      {
+        "actual": 490,
+        "predicted": 500.0,
+        "name": "Kangaskhan"
+      },
+      {
+        "actual": 295,
+        "predicted": 301.5,
+        "name": "Horsea"
+      },
+      {
+        "actual": 440,
+        "predicted": 449.2,
+        "name": "Seadra"
+      },
+      {
+        "actual": 320,
+        "predicted": 305.3,
+        "name": "Goldeen"
+      },
+      {
+        "actual": 450,
+        "predicted": 445.4,
+        "name": "Seaking"
+      },
+      {
+        "actual": 340,
+        "predicted": 355.0,
+        "name": "Staryu"
+      },
+      {
+        "actual": 520,
+        "predicted": 454.6,
+        "name": "Starmie"
+      },
+      {
+        "actual": 460,
+        "predicted": 454.9,
+        "name": "Mr. Mime"
+      },
+      {
+        "actual": 500,
+        "predicted": 495.3,
+        "name": "Scyther"
+      },
+      {
+        "actual": 455,
+        "predicted": 462.4,
+        "name": "Jynx"
+      },
+      {
+        "actual": 490,
+        "predicted": 464.2,
+        "name": "Electabuzz"
+      },
+      {
+        "actual": 495,
+        "predicted": 480.2,
+        "name": "Magmar"
+      },
+      {
+        "actual": 500,
+        "predicted": 495.8,
+        "name": "Pinsir"
+      },
+      {
+        "actual": 490,
+        "predicted": 481.2,
+        "name": "Tauros"
+      },
+      {
+        "actual": 200,
+        "predicted": 285.7,
+        "name": "Magikarp"
+      },
+      {
+        "actual": 540,
+        "predicted": 521.4,
+        "name": "Gyarados"
+      },
+      {
+        "actual": 535,
+        "predicted": 520.8,
+        "name": "Lapras"
+      },
+      {
+        "actual": 288,
+        "predicted": 289.3,
+        "name": "Ditto"
+      },
+      {
+        "actual": 325,
+        "predicted": 304.0,
+        "name": "Eevee"
+      },
+      {
+        "actual": 525,
+        "predicted": 465.8,
+        "name": "Vaporeon"
+      },
+      {
+        "actual": 525,
+        "predicted": 466.8,
+        "name": "Jolteon"
+      },
+      {
+        "actual": 525,
+        "predicted": 470.3,
+        "name": "Flareon"
+      },
+      {
+        "actual": 395,
+        "predicted": 382.9,
+        "name": "Porygon"
+      },
+      {
+        "actual": 355,
+        "predicted": 313.8,
+        "name": "Omanyte"
+      },
+      {
+        "actual": 495,
+        "predicted": 437.4,
+        "name": "Omastar"
+      },
+      {
+        "actual": 355,
+        "predicted": 325.8,
+        "name": "Kabuto"
+      },
+      {
+        "actual": 495,
+        "predicted": 478.5,
+        "name": "Kabutops"
+      },
+      {
+        "actual": 515,
+        "predicted": 498.5,
+        "name": "Aerodactyl"
+      },
+      {
+        "actual": 540,
+        "predicted": 542.7,
+        "name": "Snorlax"
+      },
+      {
+        "actual": 580,
+        "predicted": 581.2,
+        "name": "Articuno"
+      },
+      {
+        "actual": 580,
+        "predicted": 581.5,
+        "name": "Zapdos"
+      },
+      {
+        "actual": 580,
+        "predicted": 585.3,
+        "name": "Moltres"
+      },
+      {
+        "actual": 300,
+        "predicted": 327.3,
+        "name": "Dratini"
+      },
+      {
+        "actual": 420,
+        "predicted": 432.2,
+        "name": "Dragonair"
+      },
+      {
+        "actual": 600,
+        "predicted": 581.0,
+        "name": "Dragonite"
+      },
+      {
+        "actual": 680,
+        "predicted": 645.1,
+        "name": "Mewtwo"
+      },
+      {
+        "actual": 600,
+        "predicted": 567.9,
+        "name": "Mew"
+      },
+      {
+        "actual": 318,
+        "predicted": 341.8,
+        "name": "Chikorita"
+      },
+      {
+        "actual": 405,
+        "predicted": 429.1,
+        "name": "Bayleef"
+      },
+      {
+        "actual": 525,
+        "predicted": 508.5,
+        "name": "Meganium"
+      },
+      {
+        "actual": 309,
+        "predicted": 302.7,
+        "name": "Cyndaquil"
+      },
+      {
+        "actual": 405,
+        "predicted": 395.9,
+        "name": "Quilava"
+      },
+      {
+        "actual": 534,
+        "predicted": 511.0,
+        "name": "Typhlosion"
+      },
+      {
+        "actual": 314,
+        "predicted": 301.6,
+        "name": "Totodile"
+      },
+      {
+        "actual": 405,
+        "predicted": 447.5,
+        "name": "Croconaw"
+      },
+      {
+        "actual": 530,
+        "predicted": 503.6,
+        "name": "Feraligatr"
+      },
+      {
+        "actual": 215,
+        "predicted": 276.5,
+        "name": "Sentret"
+      },
+      {
+        "actual": 415,
+        "predicted": 431.7,
+        "name": "Furret"
+      },
+      {
+        "actual": 262,
+        "predicted": 327.3,
+        "name": "Hoothoot"
+      },
+      {
+        "actual": 452,
+        "predicted": 468.7,
+        "name": "Noctowl"
+      },
+      {
+        "actual": 265,
+        "predicted": 313.9,
+        "name": "Ledyba"
+      },
+      {
+        "actual": 390,
+        "predicted": 399.1,
+        "name": "Ledian"
+      },
+      {
+        "actual": 250,
+        "predicted": 262.8,
+        "name": "Spinarak"
+      },
+      {
+        "actual": 400,
+        "predicted": 397.7,
+        "name": "Ariados"
+      },
+      {
+        "actual": 535,
+        "predicted": 496.1,
+        "name": "Crobat"
+      },
+      {
+        "actual": 330,
+        "predicted": 314.1,
+        "name": "Chinchou"
+      },
+      {
+        "actual": 460,
+        "predicted": 449.5,
+        "name": "Lanturn"
+      },
+      {
+        "actual": 205,
+        "predicted": 255.2,
+        "name": "Pichu"
+      },
+      {
+        "actual": 218,
+        "predicted": 253.9,
+        "name": "Cleffa"
+      },
+      {
+        "actual": 210,
+        "predicted": 250.6,
+        "name": "Igglybuff"
+      },
+      {
+        "actual": 245,
+        "predicted": 250.1,
+        "name": "Togepi"
+      },
+      {
+        "actual": 405,
+        "predicted": 361.1,
+        "name": "Togetic"
+      },
+      {
+        "actual": 320,
+        "predicted": 298.8,
+        "name": "Natu"
+      },
+      {
+        "actual": 470,
+        "predicted": 455.0,
+        "name": "Xatu"
+      },
+      {
+        "actual": 280,
+        "predicted": 306.3,
+        "name": "Mareep"
+      },
+      {
+        "actual": 365,
+        "predicted": 346.6,
+        "name": "Flaaffy"
+      },
+      {
+        "actual": 510,
+        "predicted": 484.0,
+        "name": "Ampharos"
+      },
+      {
+        "actual": 490,
+        "predicted": 388.7,
+        "name": "Bellossom"
+      },
+      {
+        "actual": 250,
+        "predicted": 272.2,
+        "name": "Marill"
+      },
+      {
+        "actual": 420,
+        "predicted": 406.1,
+        "name": "Azumarill"
+      },
+      {
+        "actual": 410,
+        "predicted": 436.9,
+        "name": "Sudowoodo"
+      },
+      {
+        "actual": 500,
+        "predicted": 457.2,
+        "name": "Politoed"
+      },
+      {
+        "actual": 250,
+        "predicted": 301.2,
+        "name": "Hoppip"
+      },
+      {
+        "actual": 340,
+        "predicted": 346.2,
+        "name": "Skiploom"
+      },
+      {
+        "actual": 460,
+        "predicted": 406.5,
+        "name": "Jumpluff"
+      },
+      {
+        "actual": 360,
+        "predicted": 332.2,
+        "name": "Aipom"
+      },
+      {
+        "actual": 180,
+        "predicted": 243.5,
+        "name": "Sunkern"
+      },
+      {
+        "actual": 425,
+        "predicted": 379.5,
+        "name": "Sunflora"
+      },
+      {
+        "actual": 390,
+        "predicted": 403.7,
+        "name": "Yanma"
+      },
+      {
+        "actual": 210,
+        "predicted": 271.6,
+        "name": "Wooper"
+      },
+      {
+        "actual": 430,
+        "predicted": 464.6,
+        "name": "Quagsire"
+      },
+      {
+        "actual": 525,
+        "predicted": 479.3,
+        "name": "Espeon"
+      },
+      {
+        "actual": 525,
+        "predicted": 483.8,
+        "name": "Umbreon"
+      },
+      {
+        "actual": 405,
+        "predicted": 352.5,
+        "name": "Murkrow"
+      },
+      {
+        "actual": 490,
+        "predicted": 499.3,
+        "name": "Slowking"
+      },
+      {
+        "actual": 435,
+        "predicted": 391.6,
+        "name": "Misdreavus"
+      },
+      {
+        "actual": 336,
+        "predicted": 322.8,
+        "name": "Unown"
+      },
+      {
+        "actual": 405,
+        "predicted": 426.4,
+        "name": "Wobbuffet"
+      },
+      {
+        "actual": 455,
+        "predicted": 469.0,
+        "name": "Girafarig"
+      },
+      {
+        "actual": 290,
+        "predicted": 270.2,
+        "name": "Pineco"
+      },
+      {
+        "actual": 465,
+        "predicted": 448.2,
+        "name": "Forretress"
+      },
+      {
+        "actual": 415,
+        "predicted": 428.5,
+        "name": "Dunsparce"
+      },
+      {
+        "actual": 430,
+        "predicted": 433.8,
+        "name": "Gligar"
+      },
+      {
+        "actual": 510,
+        "predicted": 491.5,
+        "name": "Steelix"
+      },
+      {
+        "actual": 300,
+        "predicted": 301.8,
+        "name": "Snubbull"
+      },
+      {
+        "actual": 450,
+        "predicted": 468.5,
+        "name": "Granbull"
+      },
+      {
+        "actual": 440,
+        "predicted": 376.1,
+        "name": "Qwilfish"
+      },
+      {
+        "actual": 500,
+        "predicted": 504.0,
+        "name": "Scizor"
+      },
+      {
+        "actual": 505,
+        "predicted": 447.7,
+        "name": "Shuckle"
+      },
+      {
+        "actual": 500,
+        "predicted": 497.2,
+        "name": "Heracross"
+      },
+      {
+        "actual": 430,
+        "predicted": 437.5,
+        "name": "Sneasel"
+      },
+      {
+        "actual": 330,
+        "predicted": 300.7,
+        "name": "Teddiursa"
+      },
+      {
+        "actual": 500,
+        "predicted": 500.3,
+        "name": "Ursaring"
+      },
+      {
+        "actual": 250,
+        "predicted": 318.0,
+        "name": "Slugma"
+      },
+      {
+        "actual": 430,
+        "predicted": 395.9,
+        "name": "Magcargo"
+      },
+      {
+        "actual": 250,
+        "predicted": 281.9,
+        "name": "Swinub"
+      },
+      {
+        "actual": 450,
+        "predicted": 433.2,
+        "name": "Piloswine"
+      },
+      {
+        "actual": 410,
+        "predicted": 376.9,
+        "name": "Corsola"
+      },
+      {
+        "actual": 300,
+        "predicted": 306.6,
+        "name": "Remoraid"
+      },
+      {
+        "actual": 480,
+        "predicted": 461.9,
+        "name": "Octillery"
+      },
+      {
+        "actual": 330,
+        "predicted": 348.9,
+        "name": "Delibird"
+      },
+      {
+        "actual": 485,
+        "predicted": 511.3,
+        "name": "Mantine"
+      },
+      {
+        "actual": 465,
+        "predicted": 487.9,
+        "name": "Skarmory"
+      },
+      {
+        "actual": 330,
+        "predicted": 315.3,
+        "name": "Houndour"
+      },
+      {
+        "actual": 500,
+        "predicted": 463.4,
+        "name": "Houndoom"
+      },
+      {
+        "actual": 540,
+        "predicted": 530.4,
+        "name": "Kingdra"
+      },
+      {
+        "actual": 330,
+        "predicted": 352.8,
+        "name": "Phanpy"
+      },
+      {
+        "actual": 500,
+        "predicted": 458.7,
+        "name": "Donphan"
+      },
+      {
+        "actual": 515,
+        "predicted": 444.2,
+        "name": "Porygon2"
+      },
+      {
+        "actual": 465,
+        "predicted": 468.2,
+        "name": "Stantler"
+      },
+      {
+        "actual": 250,
+        "predicted": 353.3,
+        "name": "Smeargle"
+      },
+      {
+        "actual": 210,
+        "predicted": 263.6,
+        "name": "Tyrogue"
+      },
+      {
+        "actual": 455,
+        "predicted": 457.2,
+        "name": "Hitmontop"
+      },
+      {
+        "actual": 305,
+        "predicted": 304.5,
+        "name": "Smoochum"
+      },
+      {
+        "actual": 360,
+        "predicted": 366.1,
+        "name": "Elekid"
+      },
+      {
+        "actual": 365,
+        "predicted": 335.7,
+        "name": "Magby"
+      },
+      {
+        "actual": 490,
+        "predicted": 435.0,
+        "name": "Miltank"
+      },
+      {
+        "actual": 540,
+        "predicted": 496.9,
+        "name": "Blissey"
+      },
+      {
+        "actual": 580,
+        "predicted": 580.0,
+        "name": "Raikou"
+      },
+      {
+        "actual": 580,
+        "predicted": 586.0,
+        "name": "Entei"
+      },
+      {
+        "actual": 580,
+        "predicted": 585.5,
+        "name": "Suicune"
+      },
+      {
+        "actual": 300,
+        "predicted": 329.6,
+        "name": "Larvitar"
+      },
+      {
+        "actual": 410,
+        "predicted": 433.8,
+        "name": "Pupitar"
+      },
+      {
+        "actual": 600,
+        "predicted": 549.6,
+        "name": "Tyranitar"
+      },
+      {
+        "actual": 680,
+        "predicted": 677.8,
+        "name": "Lugia"
+      },
+      {
+        "actual": 680,
+        "predicted": 667.1,
+        "name": "Ho-Oh"
+      },
+      {
+        "actual": 600,
+        "predicted": 571.9,
+        "name": "Celebi"
+      },
+      {
+        "actual": 310,
+        "predicted": 306.4,
+        "name": "Treecko"
+      },
+      {
+        "actual": 405,
+        "predicted": 411.2,
+        "name": "Grovyle"
+      },
+      {
+        "actual": 530,
+        "predicted": 504.3,
+        "name": "Sceptile"
+      },
+      {
+        "actual": 310,
+        "predicted": 301.7,
+        "name": "Torchic"
+      },
+      {
+        "actual": 405,
+        "predicted": 398.5,
+        "name": "Combusken"
+      },
+      {
+        "actual": 530,
+        "predicted": 510.4,
+        "name": "Blaziken"
+      },
+      {
+        "actual": 310,
+        "predicted": 291.3,
+        "name": "Mudkip"
+      },
+      {
+        "actual": 405,
+        "predicted": 371.1,
+        "name": "Marshtomp"
+      },
+      {
+        "actual": 535,
+        "predicted": 498.3,
+        "name": "Swampert"
+      },
+      {
+        "actual": 220,
+        "predicted": 290.2,
+        "name": "Poochyena"
+      },
+      {
+        "actual": 420,
+        "predicted": 431.1,
+        "name": "Mightyena"
+      },
+      {
+        "actual": 240,
+        "predicted": 297.0,
+        "name": "Zigzagoon"
+      },
+      {
+        "actual": 420,
+        "predicted": 407.2,
+        "name": "Linoone"
+      },
+      {
+        "actual": 195,
+        "predicted": 222.0,
+        "name": "Wurmple"
+      },
+      {
+        "actual": 205,
+        "predicted": 225.9,
+        "name": "Silcoon"
+      },
+      {
+        "actual": 395,
+        "predicted": 403.9,
+        "name": "Beautifly"
+      },
+      {
+        "actual": 205,
+        "predicted": 244.3,
+        "name": "Cascoon"
+      },
+      {
+        "actual": 385,
+        "predicted": 394.9,
+        "name": "Dustox"
+      },
+      {
+        "actual": 220,
+        "predicted": 282.1,
+        "name": "Lotad"
+      },
+      {
+        "actual": 340,
+        "predicted": 385.1,
+        "name": "Lombre"
+      },
+      {
+        "actual": 480,
+        "predicted": 494.8,
+        "name": "Ludicolo"
+      },
+      {
+        "actual": 220,
+        "predicted": 295.6,
+        "name": "Seedot"
+      },
+      {
+        "actual": 340,
+        "predicted": 393.3,
+        "name": "Nuzleaf"
+      },
+      {
+        "actual": 480,
+        "predicted": 474.3,
+        "name": "Shiftry"
+      },
+      {
+        "actual": 270,
+        "predicted": 282.0,
+        "name": "Taillow"
+      },
+      {
+        "actual": 455,
+        "predicted": 388.1,
+        "name": "Swellow"
+      },
+      {
+        "actual": 270,
+        "predicted": 301.3,
+        "name": "Wingull"
+      },
+      {
+        "actual": 440,
+        "predicted": 437.5,
+        "name": "Pelipper"
+      },
+      {
+        "actual": 198,
+        "predicted": 248.0,
+        "name": "Ralts"
+      },
+      {
+        "actual": 278,
+        "predicted": 311.8,
+        "name": "Kirlia"
+      },
+      {
+        "actual": 518,
+        "predicted": 498.1,
+        "name": "Gardevoir"
+      },
+      {
+        "actual": 269,
+        "predicted": 266.2,
+        "name": "Surskit"
+      },
+      {
+        "actual": 454,
+        "predicted": 384.4,
+        "name": "Masquerain"
+      },
+      {
+        "actual": 295,
+        "predicted": 312.5,
+        "name": "Shroomish"
+      },
+      {
+        "actual": 460,
+        "predicted": 432.9,
+        "name": "Breloom"
+      },
+      {
+        "actual": 280,
+        "predicted": 335.9,
+        "name": "Slakoth"
+      },
+      {
+        "actual": 440,
+        "predicted": 451.6,
+        "name": "Vigoroth"
+      },
+      {
+        "actual": 670,
+        "predicted": 590.2,
+        "name": "Slaking"
+      },
+      {
+        "actual": 266,
+        "predicted": 268.5,
+        "name": "Nincada"
+      },
+      {
+        "actual": 456,
+        "predicted": 399.6,
+        "name": "Ninjask"
+      },
+      {
+        "actual": 236,
+        "predicted": 282.7,
+        "name": "Shedinja"
+      },
+      {
+        "actual": 240,
+        "predicted": 286.5,
+        "name": "Whismur"
+      },
+      {
+        "actual": 360,
+        "predicted": 394.9,
+        "name": "Loudred"
+      },
+      {
+        "actual": 490,
+        "predicted": 497.4,
+        "name": "Exploud"
+      },
+      {
+        "actual": 237,
+        "predicted": 309.1,
+        "name": "Makuhita"
+      },
+      {
+        "actual": 474,
+        "predicted": 492.2,
+        "name": "Hariyama"
+      },
+      {
+        "actual": 190,
+        "predicted": 221.3,
+        "name": "Azurill"
+      },
+      {
+        "actual": 375,
+        "predicted": 397.8,
+        "name": "Nosepass"
+      },
+      {
+        "actual": 260,
+        "predicted": 293.3,
+        "name": "Skitty"
+      },
+      {
+        "actual": 400,
+        "predicted": 415.7,
+        "name": "Delcatty"
+      },
+      {
+        "actual": 380,
+        "predicted": 322.9,
+        "name": "Sableye"
+      },
+      {
+        "actual": 380,
+        "predicted": 320.0,
+        "name": "Mawile"
+      },
+      {
+        "actual": 330,
+        "predicted": 343.6,
+        "name": "Aron"
+      },
+      {
+        "actual": 430,
+        "predicted": 419.7,
+        "name": "Lairon"
+      },
+      {
+        "actual": 530,
+        "predicted": 521.0,
+        "name": "Aggron"
+      },
+      {
+        "actual": 280,
+        "predicted": 298.9,
+        "name": "Meditite"
+      },
+      {
+        "actual": 410,
+        "predicted": 416.5,
+        "name": "Medicham"
+      },
+      {
+        "actual": 295,
+        "predicted": 302.7,
+        "name": "Electrike"
+      },
+      {
+        "actual": 475,
+        "predicted": 478.9,
+        "name": "Manectric"
+      },
+      {
+        "actual": 405,
+        "predicted": 352.9,
+        "name": "Plusle"
+      },
+      {
+        "actual": 405,
+        "predicted": 352.9,
+        "name": "Minun"
+      },
+      {
+        "actual": 430,
+        "predicted": 396.2,
+        "name": "Volbeat"
+      },
+      {
+        "actual": 430,
+        "predicted": 393.9,
+        "name": "Illumise"
+      },
+      {
+        "actual": 400,
+        "predicted": 337.7,
+        "name": "Roselia"
+      },
+      {
+        "actual": 302,
+        "predicted": 294.7,
+        "name": "Gulpin"
+      },
+      {
+        "actual": 467,
+        "predicted": 488.0,
+        "name": "Swalot"
+      },
+      {
+        "actual": 305,
+        "predicted": 326.0,
+        "name": "Carvanha"
+      },
+      {
+        "actual": 460,
+        "predicted": 493.2,
+        "name": "Sharpedo"
+      },
+      {
+        "actual": 400,
+        "predicted": 463.4,
+        "name": "Wailmer"
+      },
+      {
+        "actual": 500,
+        "predicted": 497.2,
+        "name": "Wailord"
+      },
+      {
+        "actual": 305,
+        "predicted": 328.3,
+        "name": "Numel"
+      },
+      {
+        "actual": 460,
+        "predicted": 482.1,
+        "name": "Camerupt"
+      },
+      {
+        "actual": 470,
+        "predicted": 406.8,
+        "name": "Torkoal"
+      },
+      {
+        "actual": 330,
+        "predicted": 344.3,
+        "name": "Spoink"
+      },
+      {
+        "actual": 470,
+        "predicted": 430.0,
+        "name": "Grumpig"
+      },
+      {
+        "actual": 360,
+        "predicted": 358.5,
+        "name": "Spinda"
+      },
+      {
+        "actual": 290,
+        "predicted": 300.6,
+        "name": "Trapinch"
+      },
+      {
+        "actual": 340,
+        "predicted": 385.0,
+        "name": "Vibrava"
+      },
+      {
+        "actual": 520,
+        "predicted": 500.3,
+        "name": "Flygon"
+      },
+      {
+        "actual": 335,
+        "predicted": 331.6,
+        "name": "Cacnea"
+      },
+      {
+        "actual": 475,
+        "predicted": 472.6,
+        "name": "Cacturne"
+      },
+      {
+        "actual": 310,
+        "predicted": 307.7,
+        "name": "Swablu"
+      },
+      {
+        "actual": 490,
+        "predicted": 452.4,
+        "name": "Altaria"
+      },
+      {
+        "actual": 458,
+        "predicted": 450.3,
+        "name": "Zangoose"
+      },
+      {
+        "actual": 458,
+        "predicted": 477.6,
+        "name": "Seviper"
+      },
+      {
+        "actual": 460,
+        "predicted": 436.2,
+        "name": "Lunatone"
+      },
+      {
+        "actual": 460,
+        "predicted": 447.9,
+        "name": "Solrock"
+      },
+      {
+        "actual": 288,
+        "predicted": 291.0,
+        "name": "Barboach"
+      },
+      {
+        "actual": 468,
+        "predicted": 439.3,
+        "name": "Whiscash"
+      },
+      {
+        "actual": 308,
+        "predicted": 299.2,
+        "name": "Corphish"
+      },
+      {
+        "actual": 468,
+        "predicted": 438.8,
+        "name": "Crawdaunt"
+      },
+      {
+        "actual": 300,
+        "predicted": 317.6,
+        "name": "Baltoy"
+      },
+      {
+        "actual": 500,
+        "predicted": 498.9,
+        "name": "Claydol"
+      },
+      {
+        "actual": 355,
+        "predicted": 388.3,
+        "name": "Lileep"
+      },
+      {
+        "actual": 495,
+        "predicted": 496.6,
+        "name": "Cradily"
+      },
+      {
+        "actual": 355,
+        "predicted": 325.8,
+        "name": "Anorith"
+      },
+      {
+        "actual": 495,
+        "predicted": 494.4,
+        "name": "Armaldo"
+      },
+      {
+        "actual": 200,
+        "predicted": 281.5,
+        "name": "Feebas"
+      },
+      {
+        "actual": 540,
+        "predicted": 524.3,
+        "name": "Milotic"
+      },
+      {
+        "actual": 420,
+        "predicted": 353.4,
+        "name": "Castform"
+      },
+      {
+        "actual": 440,
+        "predicted": 427.7,
+        "name": "Kecleon"
+      },
+      {
+        "actual": 295,
+        "predicted": 319.1,
+        "name": "Shuppet"
+      },
+      {
+        "actual": 455,
+        "predicted": 439.0,
+        "name": "Banette"
+      },
+      {
+        "actual": 295,
+        "predicted": 314.4,
+        "name": "Duskull"
+      },
+      {
+        "actual": 455,
+        "predicted": 458.5,
+        "name": "Dusclops"
+      },
+      {
+        "actual": 460,
+        "predicted": 492.5,
+        "name": "Tropius"
+      },
+      {
+        "actual": 455,
+        "predicted": 395.2,
+        "name": "Chimecho"
+      },
+      {
+        "actual": 465,
+        "predicted": 446.2,
+        "name": "Absol"
+      },
+      {
+        "actual": 260,
+        "predicted": 293.4,
+        "name": "Wynaut"
+      },
+      {
+        "actual": 300,
+        "predicted": 298.9,
+        "name": "Snorunt"
+      },
+      {
+        "actual": 480,
+        "predicted": 501.5,
+        "name": "Glalie"
+      },
+      {
+        "actual": 290,
+        "predicted": 322.0,
+        "name": "Spheal"
+      },
+      {
+        "actual": 410,
+        "predicted": 419.3,
+        "name": "Sealeo"
+      },
+      {
+        "actual": 530,
+        "predicted": 505.3,
+        "name": "Walrein"
+      },
+      {
+        "actual": 345,
+        "predicted": 337.4,
+        "name": "Clamperl"
+      },
+      {
+        "actual": 485,
+        "predicted": 473.4,
+        "name": "Huntail"
+      },
+      {
+        "actual": 485,
+        "predicted": 471.0,
+        "name": "Gorebyss"
+      },
+      {
+        "actual": 485,
+        "predicted": 453.0,
+        "name": "Relicanth"
+      },
+      {
+        "actual": 330,
+        "predicted": 294.3,
+        "name": "Luvdisc"
+      },
+      {
+        "actual": 300,
+        "predicted": 312.5,
+        "name": "Bagon"
+      },
+      {
+        "actual": 420,
+        "predicted": 432.3,
+        "name": "Shelgon"
+      },
+      {
+        "actual": 600,
+        "predicted": 565.6,
+        "name": "Salamence"
+      },
+      {
+        "actual": 300,
+        "predicted": 336.5,
+        "name": "Beldum"
+      },
+      {
+        "actual": 420,
+        "predicted": 442.5,
+        "name": "Metang"
+      },
+      {
+        "actual": 600,
+        "predicted": 565.9,
+        "name": "Metagross"
+      },
+      {
+        "actual": 580,
+        "predicted": 590.2,
+        "name": "Regirock"
+      },
+      {
+        "actual": 580,
+        "predicted": 580.9,
+        "name": "Regice"
+      },
+      {
+        "actual": 580,
+        "predicted": 586.3,
+        "name": "Registeel"
+      },
+      {
+        "actual": 600,
+        "predicted": 579.5,
+        "name": "Latias"
+      },
+      {
+        "actual": 600,
+        "predicted": 598.5,
+        "name": "Latios"
+      },
+      {
+        "actual": 670,
+        "predicted": 669.0,
+        "name": "Kyogre"
+      },
+      {
+        "actual": 670,
+        "predicted": 669.4,
+        "name": "Groudon"
+      },
+      {
+        "actual": 680,
+        "predicted": 672.2,
+        "name": "Rayquaza"
+      },
+      {
+        "actual": 600,
+        "predicted": 567.1,
+        "name": "Jirachi"
+      },
+      {
+        "actual": 600,
+        "predicted": 614.9,
+        "name": "Deoxys"
+      }
+    ],
+    "learning_curve": {
+      "train_sizes": [
+        61,
+        96,
+        132,
+        167,
+        202,
+        237,
+        272,
+        308
+      ],
+      "train_scores": [
+        0.9483328803306158,
+        0.9420742771731762,
+        0.9418149082975698,
+        0.9322304191373993,
+        0.9338298687347345,
+        0.92599920856514,
+        0.9192850971115304,
+        0.9226921916552842
+      ],
+      "val_scores": [
+        0.4737404431618777,
+        0.44610565514104394,
+        0.48583368439003455,
+        0.5709719232851729,
+        0.5759137836949655,
+        0.5544417767328085,
+        0.5815735890787315,
+        0.5854247229636138
+      ]
+    }
+  },
+  "legendary_classifier": {
+    "cv_f1_mean": 0.8325,
+    "cv_f1_std": 0.115,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "confusion_matrix": {
+      "tn": 365,
+      "fp": 0,
+      "fn": 0,
+      "tp": 21
+    },
+    "feature_importances": [
+      {
+        "feature": "bst",
+        "importance": 0.4394
+      },
+      {
+        "feature": "hp",
+        "importance": 0.122
+      },
+      {
+        "feature": "sp_defense",
+        "importance": 0.1154
+      },
+      {
+        "feature": "sp_attack",
+        "importance": 0.0957
+      },
+      {
+        "feature": "defense",
+        "importance": 0.0704
+      },
+      {
+        "feature": "height_dm",
+        "importance": 0.0678
+      },
+      {
+        "feature": "speed",
+        "importance": 0.0389
+      },
+      {
+        "feature": "attack",
+        "importance": 0.0298
+      },
+      {
+        "feature": "weight_hg",
+        "importance": 0.0207
+      }
+    ],
+    "learning_curve": {
+      "train_sizes": [
+        61,
+        96,
+        132,
+        167,
+        202,
+        237,
+        272,
+        308
+      ],
+      "train_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "val_scores": [
+        0.4860220750551877,
+        0.5768879754383295,
+        0.5768879754383295,
+        0.7188204985654834,
+        0.7852592388306674,
+        0.8428187133177347,
+        0.7983356542426139,
+        0.8752618388840627
+      ]
+    },
+    "sample_predictions": [
+      {
+        "name": "Articuno",
+        "prob": 0.924,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Zapdos",
+        "prob": 0.894,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Moltres",
+        "prob": 0.87,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Mewtwo",
+        "prob": 0.955,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Mew",
+        "prob": 0.955,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Raikou",
+        "prob": 0.894,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Entei",
+        "prob": 0.785,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Suicune",
+        "prob": 0.91,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Lugia",
+        "prob": 0.935,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Ho-Oh",
+        "prob": 0.915,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Celebi",
+        "prob": 0.95,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Regirock",
+        "prob": 0.784,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Regice",
+        "prob": 0.82,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Registeel",
+        "prob": 0.84,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Latias",
+        "prob": 0.91,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Latios",
+        "prob": 0.914,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Kyogre",
+        "prob": 0.975,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Groudon",
+        "prob": 0.785,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Rayquaza",
+        "prob": 0.93,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Jirachi",
+        "prob": 0.955,
+        "actual": true,
+        "predicted": true
+      },
+      {
+        "name": "Deoxys",
+        "prob": 0.674,
+        "actual": true,
+        "predicted": true
+      }
+    ]
+  }
+}

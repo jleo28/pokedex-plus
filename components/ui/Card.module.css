@@ -1,0 +1,39 @@
+.card {
+  background-color: var(--surface);
+  border: 2px solid var(--border);
+  padding: var(--space-5);
+  position: relative;
+  /* Top-right corner clip — 4×4px pixel notch */
+  clip-path: polygon(
+    0 0,
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    0 100%
+  );
+}
+
+/* Shadow effect via pseudo-element (clip-path removes box-shadow) */
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--border);
+  clip-path: polygon(
+    0 0,
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    0 100%
+  );
+  transform: translate(3px, 3px);
+  z-index: -1;
+}
+
+.flat {
+  box-shadow: none;
+}
+
+.flat::after {
+  display: none;
+}
