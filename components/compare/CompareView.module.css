@@ -1,0 +1,109 @@
+.pickers {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.vs {
+  font-family: var(--font-pixel), monospace;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+  flex-shrink: 0;
+}
+
+.slot {
+  flex: 1;
+  min-width: 160px;
+  min-height: 140px;
+  border: 2px dashed var(--border-soft);
+  background: var(--surface);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color var(--motion-instant) var(--ease-step),
+              background var(--motion-instant) var(--ease-step);
+}
+
+.slot:hover { border-color: var(--border); background: var(--surface-2); }
+.slot:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 2px; }
+
+.slotFilled {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-3);
+}
+
+.slotName {
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.8);
+  color: var(--ink);
+}
+
+.slotTypes { display: flex; gap: var(--space-1); }
+
+.slotEmpty {
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.85);
+  color: var(--ink-muted);
+}
+
+.statTable {
+  border: 2px solid var(--border-soft);
+  margin-bottom: var(--space-4);
+}
+
+.statHeader {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  padding: var(--space-2) var(--space-3);
+  background: var(--surface-2);
+  border-bottom: 2px solid var(--border-soft);
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.75);
+  color: var(--ink-muted);
+  text-align: center;
+}
+
+.statRow {
+  display: grid;
+  grid-template-columns: 1fr 80px 1fr;
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border-soft);
+  align-items: center;
+  text-align: center;
+}
+
+.statRow:last-child { border-bottom: none; }
+
+.statLabel {
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.7);
+  color: var(--ink-muted);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.val {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.val.win {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.matchupNote {
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.85);
+  color: var(--ink-muted);
+  border: 1px solid var(--border-soft);
+  padding: var(--space-3);
+  margin-bottom: var(--space-4);
+}
