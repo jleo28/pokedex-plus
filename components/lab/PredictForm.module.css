@@ -1,0 +1,170 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.sliders {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  border: 2px solid var(--border-soft);
+  padding: var(--space-4);
+}
+
+.sliderRow {
+  display: grid;
+  grid-template-columns: 72px 1fr 40px;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.sliderLabel {
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.75);
+  color: var(--ink-muted);
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  background: var(--surface-2);
+  border: 1px solid var(--border-soft);
+  outline: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: var(--ink);
+  border: 2px solid var(--bg);
+  cursor: pointer;
+}
+
+.slider:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+.sliderValue {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-sm);
+  color: var(--ink);
+  text-align: right;
+}
+
+.total {
+  display: flex;
+  gap: var(--space-3);
+  align-items: baseline;
+  border-top: 1px solid var(--border-soft);
+  padding-top: var(--space-2);
+}
+
+.totalLabel {
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.75);
+  color: var(--ink-muted);
+  text-transform: uppercase;
+}
+
+.totalValue {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-base);
+  color: var(--ink);
+}
+
+.btn {
+  align-self: flex-start;
+  padding: var(--space-2) var(--space-6);
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.85);
+  letter-spacing: 0.05em;
+  border: 2px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--border);
+  transition: transform var(--motion-instant) var(--ease-step),
+              box-shadow var(--motion-instant) var(--ease-step);
+}
+
+.btn:hover:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--border);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+.error {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-sm);
+  color: #e53935;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  border: 2px solid var(--border);
+  padding: var(--space-5);
+  background: var(--surface);
+}
+
+.bstResult, .legendaryResult {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.resultLabel {
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.75);
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.bstValue {
+  font-family: var(--font-pixel), monospace;
+  font-size: var(--text-xl);
+  color: var(--ink);
+}
+
+.gauge {
+  display: flex;
+  gap: 2px;
+}
+
+.gaugeCell {
+  flex: 1;
+  height: 16px;
+  border: 1px solid var(--border-soft);
+  background: var(--surface-2);
+}
+
+.gaugeFilled {
+  background: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+.probValue {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-sm);
+  color: var(--ink);
+}
