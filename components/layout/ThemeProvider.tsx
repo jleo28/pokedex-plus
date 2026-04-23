@@ -14,12 +14,11 @@ export function useTheme() {
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('day');
+  const [theme, setTheme] = useState<Theme>('night');
 
   useEffect(() => {
     const stored = localStorage.getItem('theme') as Theme | null;
-    const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day';
-    const initial = stored ?? preferred;
+    const initial = stored ?? 'night';
     setTheme(initial);
     document.documentElement.setAttribute('data-theme', initial === 'night' ? 'night' : '');
   }, []);
