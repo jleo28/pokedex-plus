@@ -1,12 +1,13 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getPokemonBySlug, getEvolutionChain, getPokemonByIds } from '@/lib/pokemon/queries';
+import { getPokemonBySlug, getEvolutionChain, getPokemonByIds, getAllPokemon } from '@/lib/pokemon/queries';
 import { SpriteImage } from '@/components/pokedex/SpriteImage';
 import { TypeBadge } from '@/components/pokedex/TypeBadge';
 import { StatBar } from '@/components/pokedex/StatBar';
 import { TypeEffectiveness } from '@/components/pokedex/TypeEffectiveness';
 import { EvolutionChain } from '@/components/pokedex/EvolutionChain';
 import { CryButton } from '@/components/pokedex/CryButton';
+import { RelatedPokemon } from '@/components/pokedex/RelatedPokemon';
 import styles from './page.module.css';
 
 export const revalidate = 86400;
@@ -28,7 +29,10 @@ export default async function PokemonDetailPage({ params }: PageProps) {
   const pokemon = await getPokemonBySlug(params.slug);
   if (!pokemon) notFound();
 
-  const { evolutions, chain: chainIds } = await getEvolutionChain(pokemon.id);
+  const [{ evolutions, chain: chainIds }, allPokemon] = await Promise.all([
+    getEvolutionChain(pokemon.id),
+    getAllPokemon(),
+  ]);
   const chainPokemon = chainIds.length > 1 ? await getPokemonByIds(chainIds) : [pokemon];
   const orderedChain = chainIds.map((id) => chainPokemon.find((p) => p.id === id)!).filter(Boolean);
 
@@ -126,10 +130,9 @@ export default async function PokemonDetailPage({ params }: PageProps) {
         />
       )}
 
-      {/* Related — placeholder until Task 34 */}
       <section>
         <h2 className={styles.sectionHeading}>Related Pokémon</h2>
-        <div className={styles.placeholder}>Coming soon</div>
+        <RelatedPokemon current={pokemon} all={allPokemon} />
       </section>
     </main>
   );
