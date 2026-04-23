@@ -1,0 +1,22 @@
+.page {
+  padding: var(--space-6) var(--space-5);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: var(--space-6);
+}
+
+.title {
+  font-family: var(--font-pixel), monospace;
+  font-size: var(--text-xl);
+  color: var(--ink);
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  font-family: var(--font-mono), monospace;
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}

@@ -1,0 +1,28 @@
+.grid {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  border: 2px solid var(--border-soft);
+  background: var(--surface);
+  text-decoration: none;
+  transition: border-color var(--motion-instant) var(--ease-step);
+}
+
+.card:hover { border-color: var(--border); }
+.card:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 2px; }
+
+.name {
+  font-family: var(--font-pixel), monospace;
+  font-size: calc(var(--text-xs) * 0.75);
+  color: var(--ink);
+}
+
+.types { display: flex; gap: var(--space-1); }
