@@ -1,4 +1,7 @@
-import { createServerClient } from '@/lib/supabase/server';
+// Submissions used to live in Supabase. They're now a fixed gallery of the
+// submissions people made before the move (data/static/submissions.json) plus
+// whatever the current visitor invents, saved in their own browser.
+import gallery from '@/data/static/submissions.json';
 
 export interface UserSubmission {
   id: string;
@@ -16,25 +19,36 @@ export interface UserSubmission {
   created_at: string;
 }
 
-export async function getRecentSubmissions(limit = 20): Promise<UserSubmission[]> {
-  const supabase = createServerClient();
-  const { data } = await supabase
-    .from('user_submissions')
-    .select('*')
-    .order('created_at', { ascending: false })
-    .limit(limit);
-  return (data ?? []) as UserSubmission[];
+const STORAGE_KEY = 'pkpp:submissions';
+
+export function getGallerySubmissions(): UserSubmission[] {
+  return (gallery as UserSubmission[]).slice(0, 20);
 }
 
-export async function createSubmission(
-  submission: Omit<UserSubmission, 'id' | 'created_at'>,
-): Promise<UserSubmission | null> {
-  const supabase = createServerClient();
-  const { data } = await supabase
-    .from('user_submissions')
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    .insert(submission as any)
-    .select()
-    .single();
-  return data as UserSubmission | null;
+export function loadLocalSubmissions(): UserSubmission[] {
+  try {
+    const raw = window.localStorage.getItem(STORAGE_KEY);
+    const parsed = raw ? (JSON.parse(raw) as UserSubmission[]) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+export function saveLocalSubmission(
+  s: Omit<UserSubmission, 'id' | 'created_at'>,
+): UserSubmission {
+  const entry: UserSubmission = {
+    ...s,
+    id: `local-${Date.now()}`,
+    created_at: new Date().toISOString(),
+  };
+  try {
+    const next = [entry, ...loadLocalSubmissions()].slice(0, 20);
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+    window.dispatchEvent(new Event('pkpp:submissions'));
+  } catch {
+    // Storage unavailable (private mode etc.): the result still shows on screen.
+  }
+  return entry;
 }

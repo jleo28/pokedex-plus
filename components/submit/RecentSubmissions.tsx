@@ -1,11 +1,23 @@
-import type { UserSubmission } from '@/lib/pokemon/submissions';
+'use client';
+
+import { useEffect, useState } from 'react';
+import { loadLocalSubmissions, type UserSubmission } from '@/lib/pokemon/submissions';
 import styles from './RecentSubmissions.module.css';
 
 interface RecentSubmissionsProps {
   submissions: UserSubmission[];
 }
 
-export function RecentSubmissions({ submissions }: RecentSubmissionsProps) {
+export function RecentSubmissions({ submissions: gallery }: RecentSubmissionsProps) {
+  const [local, setLocal] = useState<UserSubmission[]>([]);
+  useEffect(() => {
+    const sync = () => setLocal(loadLocalSubmissions());
+    sync();
+    window.addEventListener('pkpp:submissions', sync);
+    return () => window.removeEventListener('pkpp:submissions', sync);
+  }, []);
+  const submissions = [...local, ...gallery];
+
   if (submissions.length === 0) {
     return (
       <p className={styles.empty}>No submissions yet. Be the first!</p>

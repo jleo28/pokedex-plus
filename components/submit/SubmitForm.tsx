@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { saveLocalSubmission } from '@/lib/pokemon/submissions';
 import styles from './SubmitForm.module.css';
 
 const TYPES = [
@@ -52,17 +53,13 @@ export function SubmitForm() {
       if (!predRes.ok) throw new Error('Prediction failed.');
       const pred = await predRes.json();
 
-      await fetch('/api/submissions', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: name.trim(),
-          type_primary: typePrimary,
-          type_secondary: typeSecondary || null,
-          ...stats,
-          predicted_bst: pred.predicted_bst,
-          predicted_legendary_prob: pred.predicted_legendary_prob,
-        }),
+      saveLocalSubmission({
+        name: name.trim(),
+        type_primary: typePrimary,
+        type_secondary: typeSecondary || null,
+        ...stats,
+        predicted_bst: pred.predicted_bst,
+        predicted_legendary_prob: pred.predicted_legendary_prob,
       });
 
       setResult({

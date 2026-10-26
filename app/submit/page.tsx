@@ -1,12 +1,10 @@
 import { SubmitForm } from '@/components/submit/SubmitForm';
 import { RecentSubmissions } from '@/components/submit/RecentSubmissions';
-import { getRecentSubmissions } from '@/lib/pokemon/submissions';
+import { getGallerySubmissions } from '@/lib/pokemon/submissions';
 import styles from './page.module.css';
 
-export const revalidate = 60;
-
-export default async function SubmitPage() {
-  const submissions = await getRecentSubmissions(20);
+export default function SubmitPage() {
+  const submissions = getGallerySubmissions();
 
   return (
     <main className={styles.page}>
